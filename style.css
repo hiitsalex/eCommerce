@@ -1,52 +1,136 @@
-/* Set height to 100% for body and html to enable the background image to cover the whole page: */
-body, html {
-    height: 100%
-  }
-  
-  .bgimg {
-    /* Background image */
-    background-image: url('/w3images/forestbridge.jpg');
-    /* Full-screen */
-    height: 100%;
-    /* Center the background image */
-    background-position: center;
-    /* Scale and zoom in the image */
-    background-size: cover;
-    /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
-    position: relative;
-    /* Add a white text color to all elements inside the .bgimg container */
-    color: white;
-    /* Add a font */
-    font-family: "Courier New", Courier, monospace;
-    /* Set the font-size to 25 pixels */
-    font-size: 25px;
-  }
-  
-  /* Position text in the top-left corner */
-  .topleft {
-    position: absolute;
-    top: 0;
-    left: 16px;
-  }
-  
-  /* Position text in the bottom-left corner */
-  .bottomleft {
-    position: absolute;
-    bottom: 0;
-    left: 16px;
-  }
-  
-  /* Position text in the middle */
-  .middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  /* Style the <hr> element */
-  hr {
-    margin: auto;
-    width: 40%;
-  }
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.container{
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.navbar{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.logo{
+  width: 50px;
+  cursor: pointer;
+  margin: 30px 0;
+}
+.menu-icon{
+  width: 25px;
+  cursor: pointer;
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+nav ul li a:hover{
+  color: brown
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0;
+}
+.col-1{
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 50px;
+}
+
+.col-1 h2{
+  font-size: 54px;
+}
+
+.col-1 h3{
+  font-size: 30px;
+  color: #707070;
+  font-weight: 100;
+  margin: 20px 0 10px;
+}
+.col-1 p{
+  font-size: 16px;
+  color: #b7b7b7;
+  font-weight: 100;
+}
+.col-1 h4{
+
+  margin: 30px 0;
+  font-size: 20px;
+ 
+}
+.col-1 h4{
+  font-size: 30px;
+  color: #707070;
+  font-weight: 100;
+  margin: 20px 0 10px;
+}
+
+button{
+  width: 140px;
+  border: 0;
+  padding: 12px 10px;
+  outline: none;
+  color: #ffff;
+  background: linear-gradient(to right,#ded9e2,#c0b9dd);
+  border-radius: 6px;
+  cursor: pointer;
+}
+button img{
+  width: 30px;
+  display: none;
+}
+button:hover img{
+  display: block;
+}
+button:hover img{
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.col-2{
+position: relative;
+flex-basis: 60%;
+display: flex;
+align-items: center;
+}
+.col-2 .controller{
+  width: 90%;
+}
+.color-box{
+  position: absolute;
+  right: 0;
+  top: -1;
+  background: linear-gradient(to right,#ded9e2,#c0b9dd);
+  border-radius: 20px 0 0 20px;
+  height: 110%;
+  width: 80%;
+  z-index: -1;
+  transform: translateX(150px);
+}
+.social-links img{
+  height: 13px;
+  margin: 20px;
+  cursor: pointer;
+}
+.social-links{
+  text-align: center;
+}
