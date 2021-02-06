@@ -89,6 +89,7 @@ button{
   border-radius: 6px;
   cursor: pointer;
   transition: width 0.5s;
+  
 }
 button img{
   width: 30px;
@@ -96,12 +97,17 @@ button img{
 }
 button:hover img{
   display: block;
+  
 }
 button:hover{
   width: 160px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
 }
 
 .col-2{
@@ -148,15 +154,21 @@ align-items: center;
   background-color: #F5F3F6;
   border-bottom-style: solid;
   border-bottom-width: thin;
+  font-size: large;
   
 }
 label{
   color: #707070;
 }
 .forms{
-  margin: auto;
-  width: 50%;
-  padding: 10px;
+  margin: 200px ;
+  width: 25%;
+  height: 250px;
+  padding: 30px;
+  font-size: larger;
+  border-color: #c0b9dd;
+  border-style: solid;
+  border-radius: 20px 20px 20px 20px;
   
 }
 
@@ -170,10 +182,17 @@ label{
   font-size: 15px;
   padding: 10px;
   width: 100px;
-  
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
+}
+.submit:hover{
+  width: 160px;
+  /*display: flex;*/
+}
+.email{
+  position: absolute;
+ m
 }
 @media only screen and (max-width:700px){
 
