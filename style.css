@@ -17,6 +17,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  
 }
 .logo{
   width: 50px;
@@ -155,6 +156,7 @@ align-items: center;
   border-bottom-style: solid;
   border-bottom-width: thin;
   font-size: large;
+  color: #707070;
   
 }
 label{
@@ -173,7 +175,7 @@ label{
 }
 
 .submit{
-  display: inline-block;
+  display: block;
   border-radius: 20px;
   background: linear-gradient(to right,#ded9e2,#c0b9dd);
   border: none;
@@ -190,9 +192,14 @@ label{
   width: 160px;
   /*display: flex;*/
 }
-.email{
-  position: absolute;
- m
+.email-img{
+  position: relative;
+  top: 0%;
+  left: 70%;
+  width: 40%;
+  
+  
+ 
 }
 @media only screen and (max-width:700px){
 
@@ -246,5 +253,43 @@ label{
   .col-1 h3{
     font-size: 15px;
   }
+  .forminputs{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  
+    border-bottom: #707070;
+    background-color: #F5F3F6;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    font-size: medium;
+    text-decoration-color: #707070;
+    
+  }
+  label
+{
+  font-size: medium;
+}
+.forms{
+  margin-top: 20px ;
+  margin-left: 20px ;
+
+
+  width: max-content;
+  height: 250px;
+  padding: 30px;
+  font-size: large;
+  border-color: #c0b9dd;
+  border-style: solid;
+  border-radius: 20px 20px 20px 20px;
+  position: relative;
+  
+}
+.email-img{
+  position: relative;
+  top: 80%;
+  left: 70%;
+  width: 40%; 
+}
 
 }
