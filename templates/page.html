@@ -6,6 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="flashes">
+        {% for message in get_flashed_messages() %}
+          {{ message }}
+        {% endfor %}
+      </div>
 </body>
 </html>
