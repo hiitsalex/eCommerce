@@ -22,7 +22,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASS
     - name: Build Docker nodejs
-    - run: |
+      run: |
        docker build ./nodejs -t aimvector/nodejs:1.0.0.0
     - name: docker push
       run: |
