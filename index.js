@@ -25,7 +25,7 @@ app.use(
   })
 );
 
-app.post("/waitingList", (req, res) => {
+app.post("/newsletter", (req, res) => {
   let name = req.body.name;
   let email = req.body.email;
 
