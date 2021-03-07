@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Wardrobe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="icon" href="images\favicon.png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <a href="index.html"><img src="images\logo.png" class="logo" /></a>
+        <nav>
+          <ul id="ListItems">
+            <li><a href="">Shop</a></li>
+            <li><a href="">Sell</a></li>
+            <li><a href="">Our story</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <img src="images\menu.png" class="menu-icon" onclick="togglemenu()" />
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <h2>
+            Out of ideas?<br />
+            We got you
+          </h2>
+          <h3>Browse our wardrobe</h3>
+          <p>Coming soon</p>
+          <h4>Spring 2021</h4>
+          <a href="/waitingList"
+            ><button type="button">
+              Join the waitlist <img src="images\right-arrow.png" /></button
+          ></a>
+        </div>
+        <div class="col-2">
+          <img src="images\big.jpg" class="big" />
+          <div class="color-box"></div>
+        </div>
+      </div>
+    </div>
+    <footer class="social-links">
+      <img src="images\ig.png" />
+      <img src="images\fb.png" />
+      <img src="images\tw.png" />
+    </footer>
+  </body>
+  <script>
+    var menuList = document.getElementById("ListItems");
+    menuList.style.maxHeight = "0px";
+    function togglemenu() {
+      if (menuList.style.maxHeight == "0px") menuList.style.maxHeight = "130px";
+      else menuList.style.maxHeight = "0px";
+    }
+  </script>
+</html>
