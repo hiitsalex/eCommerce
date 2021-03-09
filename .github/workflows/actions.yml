@@ -5,10 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-    - name: Hello world action stepss
+    - name: Hello world action step
       id: hello
-      
-      uses: hiitsalex/eCommerce/tree/master/.github/actions/checkout@v1
+      uses: actions/eCommerce@v2
       with:
         who-to-greet: 'Mona the Octocat'
     # Use the output from the `hello` step
