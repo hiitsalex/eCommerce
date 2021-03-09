@@ -7,7 +7,8 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: ./@v2
+      uses: actions/checkout@v2
+      uses: ./.github/actions@v2
       with:
         who-to-greet: 'Mona the Octocat'
     # Use the output from the `hello` step
