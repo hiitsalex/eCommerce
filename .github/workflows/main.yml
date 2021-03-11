@@ -14,11 +14,6 @@ jobs:
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
 
-      name: Node.js CI
-
-
-
-
   build:
 
     runs-on: ubuntu-latest
