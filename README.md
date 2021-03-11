@@ -15,7 +15,7 @@ Prettier is an opinionated code formatter. It enforces a consistent style by par
 ## Screenshots
 Starting logo of the brand:
 
-<img>public/images/logo.png</img>
+<img source ="public/images/logo.png"></img>
 
 ## Tech/framework used
 Node.js, Express
