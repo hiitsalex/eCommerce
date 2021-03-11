@@ -3,21 +3,20 @@ on: [push]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: Creatin Docker image
+    name: Creating Docker image
     steps:
     - name: Hello world action step
       id: hello
       uses: hiitsalex/ecommerce/.github/actions@v3
       with:
-        who-to-greet: 'Mona the Octocat'
+        who-to-greet: 'Everyone'
     # Use the output from the `hello` step
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
 
  
   build:
-    
-
+    name: Build project
     runs-on: ubuntu-latest
 
     steps:
@@ -28,8 +27,6 @@ jobs:
         node-version: '12.x'
     - run: npm ci
     - run: npm run build --if-present
-
-    name: Publish Docker image
 
 
   push_to_registry:
