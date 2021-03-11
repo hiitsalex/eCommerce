@@ -16,7 +16,7 @@ jobs:
 
  
   build:
-    name: Build project
+    
 
     runs-on: ubuntu-latest
 
