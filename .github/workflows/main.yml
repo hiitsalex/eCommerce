@@ -3,7 +3,7 @@ on: [push]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Creatin Docker image
     steps:
     - name: Hello world action step
       id: hello
@@ -16,6 +16,7 @@ jobs:
 
  
   build:
+    name: Build project
 
     runs-on: ubuntu-latest
 
@@ -38,7 +39,7 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v2
       - name: Push to Docker Hub
-        uses: docker/build-push-action@v1
+        uses: hiitsalex/ecommerce/.github/actions/docker/build-push-action@v1
         with:
           username: ${{ secrets.DOCKER_USER }}
           password: ${{ secrets.DOCKER_PASS }}
